@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+:root{
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-grisOscuro: #666;
+    --color-grisClaro: #ebebeb;
+    --color-verde: #39b54a;
+} /*Es una variable de selector raiz, le doy un valor a amarillo para usarlo despues sin el codigo hexagesimal*/
+/*Usar variable, ej: var(--color-verde)*/
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
