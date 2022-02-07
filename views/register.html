@@ -15,12 +15,13 @@
     <header>
       <section class="contenedor-superior">
         <div class="header-sup">
-          <img
+          <a href="/">
+            <img
             class="logo"
-            src="images/logo-mercado-liebre.svg"
-            alt="Logo Mercado liebre"
-          />
-
+              src="images/logo-mercado-liebre.svg"
+              alt="Logo Mercado liebre"
+            />
+          </a>
           <div class="buscar">
             <form action="">
               <input
@@ -32,7 +33,7 @@
         </div>
         <div class="cuota">
           <p>
-            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin
+            <i class="fas fa-hand-holding-usd header-icon"></i>Comprá en cuotas y sin
             tarjeta de crédito
           </p>
         </div>
@@ -48,18 +49,19 @@
         <ul class="nav-dcha">
           <!--Como están en dos listas, se crea un salto de línea-->
           <li>
-            <a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i>
+            <a href="/register" class="header-icon">Creá tu cuenta</a><i class="far fa-id-card"></i>
           </li>
           <li>
-            <a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i>
+            <a href="/login" class="header-icon">Ingresá</a><i class="fas fa-sign-in-alt"></i>
           </li>
-          <li>Mis compras<i class="fas fa-shopping-basket"></i></li>
+          <li>Mis compras<i class="fas fa-shopping-basket header-icon-basket"></i></li>
         </ul>
       </nav>
 
       <div class="burger-menu"><i class="fas fa-bars"></i></div>
     </header>
     <main>
+      <div class="container-form-register">
       <form action="" class="register-form">
         <label for="datos">Completá tus datos:</label>
         <input
@@ -69,8 +71,11 @@
           placeholder="Nombre y apellido"
           id="datos"
         />
-        <span class="error">*Ingrese su nombre completo</span>
-        <input class="espacio"
+        <br>
+        <br>
+        <span class="error">* Ingrese su nombre completo</span>
+        <input
+          class="espacio"
           type="text"
           name="user-name"
           placeholder="Nombre de usuario"
@@ -81,9 +86,9 @@
         <input type="date" name="fecha-nac" id="nacimiento" />
         <label for="domicilio">Domicilio:</label>
         <input type="text" placeholder="Calle y N°" id="domicio" />
-        <h4>Foto de usuario:</h4>
+        <label>Foto de usuario:</label>
         <input class="foto" type="file" id="foto-user" />
-        <h4>Perfil de usuario</h4>
+        <label>Perfil de usuario</label>
         <input
           class="radio-chck"
           type="radio"
@@ -99,7 +104,8 @@
           id="vendedor"
         />
         <label class="sin-espacio" for="vendedor">Vendedor</label>
-        <h4>Intereses</h4>
+        <br><br>
+        <label>Intereses</label>
         <div class="chck">
           <input
             class="radio-chck"
@@ -154,17 +160,21 @@
             id="password"
             placeholder="Contraseña"
           />
-          <span class="error">*Mínimo 6 caracteres</span>
-          <input class="espacio"
+          <br>
+          <br>
+          <span class="error">* Mínimo 6 caracteres</span>
+          <input
+            class="espacio"
             type="password"
             id="password"
             placeholder="Confirmar contraseña"
           />
         </div>
-        <button><a href="/">Enviar</a></button>
+        <a href="/"><button>Enviar</button></a>
         <!--Sin type="submit según el TP, lleva <a>"-->
         <button type="reset" class="borrar">Borrar</button>
       </form>
+      </div>
     </main>
     <footer>
       <section>

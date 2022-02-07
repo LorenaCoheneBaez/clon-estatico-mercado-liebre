@@ -23,7 +23,7 @@ header .header-sup {
 }
 
 header .header-sup .logo{
-  width: 46%;
+  width: 70%;
   margin-right: 15px;
 }
 
@@ -42,6 +42,11 @@ header .header-sup .buscar form input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+header .header-sup .buscar form input::placeholder{
+  background-color: transparent;
+}
+
 /*Lupa*/
 header .header-sup .buscar button {
   width: 15%;
@@ -57,6 +62,14 @@ header .header-sup .buscar button {
 header .header-sup .buscar button {
   text-align: center;
   color: var(--color-grisOscuro);
+}
+
+header .header-icon{
+margin-right: 5px;
+}
+
+header .header-icon-basket{
+margin-left: 5px;
 }
 
 header .cuota {
@@ -220,6 +233,7 @@ footer section h4 {
 footer section p{
   font-size: 12px;
   color: var(--color-grisOscuro);
+  text-align: center;
 }
 
 /*--------RESPONSIVE----*/

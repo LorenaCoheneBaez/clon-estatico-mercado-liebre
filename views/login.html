@@ -13,13 +13,15 @@
     <header>
         <section class="contenedor-superior">
         <div class="header-sup">
-        <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo Mercado liebre">
+        <a href="/">
+            <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo Mercado liebre">
+        </a>
 
         <div class="buscar"> <form action=""><input type="text"
             placeholder="Buscar productos, marcas y algo más..."><button><i class="fas fa-search"></i></button></form></div>
         </div>
             <div class="cuota">
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                <p><i class="fas fa-hand-holding-usd header-icon"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
         </section>
         <nav class="menu"> <!--barra  de navegación con lista desordenada-->
@@ -30,23 +32,27 @@
                 <li>Ayuda</li>
             </ul>
             <ul class="nav-dcha"> <!--Como están en dos listas, se crea un salto de línea-->
-                <li> <a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
-                <li> <a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-                <li>Mis compras<i class="fas fa-shopping-basket"></i></li>
+                <li> <a href="/register" class="header-icon">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li> <a href="/login" class="header-icon">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li>Mis compras<i class="fas fa-shopping-basket header-icon-basket"></i></li>
             </ul>
         </nav>
 
         <div class="burger-menu"><i class="fas fa-bars"></i></div>
 
     </header>
-    <main class="login">
-<form class="form-login" action="" method="POST">
-    <input class="user" type="text" name="usuario" placeholder="Nombre de usuario">
-    <input type="password" name="password" placeholder="Elegí tu contraseña">
-    <span class="error">*Mínimo 6 caracteres</span>
-    <button><a href="/">Enviar</a></button> <!--Sin type="submit según el TP, lleva <a>"-->
-
-</form>
+    <main class="login ">
+<div class="container-form-login">
+    <form class="form-login" action="" method="POST">
+        <input class="user" type="text" name="usuario" placeholder="Nombre de usuario">
+        <input type="password" name="password" placeholder="Elegí tu contraseña">
+        <br>
+        <br>
+        <span class="error">* Mínimo 6 caracteres</span>
+        <a href="/"><button>Enviar</button></a> <!--Sin type="submit según el TP, lleva <a>"-->
+    
+    </form>
+</div>
     </main>
     <footer>
         
